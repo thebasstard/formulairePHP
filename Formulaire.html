@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+	<meta charset="utf8">
+	<head>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" href="Formulaire.css">		
+	</head>
+	<body>
+		<div class="container">
+			<form class="form-horizontal" method="POST" action="http://localhost/FormulairePHP/Formulaire.php">
+				<legend><h2>Vos coordonnées :</h2></legend>
+				<br>
+				<h3><font class="ast">*</font>Ces zones sont obligatoires pour envoyer le formulaire.</h3>
+				<br>
+					<div class="form-group has-success">
+						<label class=" col-sm-2 control-label"><h4>Société :</h4></label>	
+						<div class="col-sm-7">					
+							<input class="form-control" required type="text" name="Societe" Id="Societe">							
+						</div>
+						<div class="col-sm-2 ast">*</div>
+					</div>	
+					<div class="form-group has-success">		
+						<label class="col-sm-2 control-label"><h4>Personne à contacter :</h4></label>
+						<div class="col-sm-7">
+							<input class="form-control" required type="text" name="Contact" Id="Contact">							
+						</div>
+						<div class="col-sm-2 ast">*</div>
+					</div>	
+					<div class="form-group has-success">		
+						<label class="col-sm-2 control-label"><h4>Adresse de l'entreprise :</h4></label>
+						<div class="col-sm-7">
+							<textarea class="form-control" name = "Adresse" Id="Adresse" cols = "30" rows = "3"></textarea>
+						</div>
+					</div>			
+					<div class="form-group has-success">
+						<div>
+							<label class="col-sm-2 control-label"><h4>Code Postal :</h4></label>
+						</div>
+						<div class="col-sm-7">
+							<input class="form-control" required type="text" name="Postal" Id="Postal">
+						</div>
+						<div class="col-sm-2 ast">*</div>
+					</div>
+					<div class="form-group has-success">		
+						<label class="col-sm-2 control-label"><h4>Ville :</h4></label>
+						<div class="col-sm-7">
+							<input class="form-control" required type="text" name="Ville" Id="Ville">							
+						</div>
+						<div class="col-sm-2 ast">*</div>
+					</div>			
+					<div class="form-group has-success">									
+						<label class="col-sm-2 control-label"><h4>E-mail:</h4></label>
+						<div class="col-sm-7">
+							<input class="form-control" required type="text" name="Email" Id="Email">							
+						</div>
+						<div class="col-sm-2 ast">*</div>
+					</div>
+					<div class="form-group has-success">
+						<label class="col-sm-2 control-label"><h4>Téléphone :</h4></label>
+						<div class="col-sm-7">
+							<input class="form-control" type="text" name="Telephone" Id="Telephone">
+						</div>
+					</div>	
+					<div>
+					<div class="form-group has-success">		
+						<label class="col-sm-2 control-label"><h4>Sélectionnez l'environnement technique du projet :</h4></label>
+						<div class="col-sm-7">
+							<textarea class="form-control" name = "Environnement" Id="Environnement" cols = "30" rows = "5"></textarea>
+						</div>					
+					</div>
+						<div>		
+							<select name = "Choix" Id="Choix">
+								<option value = "Choisissez">Choisissez</option>
+								<option value = "Access">Access</option>
+								<option value = "Java">Java</option>		
+								<option value = "Delphi">Delphi</option>
+								<option value = "Windev">Windev</option>	
+								<option value = "Visual_Basic">Visual Basic</option>	
+								<option value = "Power_Builder">Java</option>	
+								<option value = "Internet">Internet</option>
+								<option value = "Intranet">Intranet</option>	
+								<option value = "Windows_NT">Windows NT</option>	
+								<option value = "Unix">Unix</option>
+								<option value = "SQL_Server">SQL Server</option>
+								<option value = "Oracle">Oracle</option>
+								<option value = "Autres">Autres</option>	
+							</select>	
+						</div>	
+					</div>
+					<br/>
+					<br/>
+					<div class="form-group col-lg-11 col-lg-offset-1 text-center">						
+						<input type = "submit" Id="submit" class="btn btn-primary"/>													
+						<input type = "reset" Id="reset"class="btn btn-default" value="Effacer"/>
+					</div>																											
+			</form>
+		</div>
+	</body>
+</html>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="Formulaire.js"></script>
+
